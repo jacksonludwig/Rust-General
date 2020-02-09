@@ -1,7 +1,9 @@
-use std::io;
 use std::cmp::Ordering;
+use std::io;
+
 use rand::Rng;
-// similar to use namespace
+
+// similar to import, gives static methods and others
 fn main() {
     println!("---Guess the number---");
     let secret_num = rand::thread_rng().gen_range(1, 101);
