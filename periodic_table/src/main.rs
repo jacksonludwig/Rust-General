@@ -1,4 +1,4 @@
-#![windows_subsystem = "windows"]
+
 use std::{process};
 use std::collections::HashMap;
 use std::error::Error;
@@ -53,7 +53,7 @@ fn show_prompts(elements: &HashMap<String, &Element>) {
     let quit_tag_2: char = 'q';
 
     loop {
-        println!("\t\t------------Periodic Table------------");
+        println!("------------Periodic Table------------");
         println!("Enter an element's symbol, name, or atomic number to receive it's information.\n(q)uit to exit.");
 
         let mut search = String::new();
