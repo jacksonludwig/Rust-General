@@ -18,7 +18,7 @@ fn turn_to_struct(list: &mut Vec<Element>) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-pub(crate) fn build_list(list: &mut Vec<Element>) {
+pub(crate) fn build_list(list: &mut Vec<Element>) -> () {
     if let Err(err) = turn_to_struct(list) {
         println!("{}", err);
         process::exit(1);
