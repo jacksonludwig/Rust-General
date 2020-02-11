@@ -95,6 +95,6 @@ pub(crate) struct Element {
 
     #[serde(deserialize_with = "csv::invalid_option")]
     #[serde(rename = "NumberofValence")]
-    pub(crate) number_valence: Option<u8>
+    pub(crate) number_valence: Option<u8>,
 }
 
