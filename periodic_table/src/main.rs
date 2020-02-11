@@ -70,10 +70,6 @@ fn show_prompts(elements: &HashMap<String, &Element>) {
             _ => ()
         }
 
-        if search.eq(&quit_tag_1) || search.eq(&quit_tag_2.to_string()) {
-            process::exit(0);
-        }
-
         let element: &Element = elements.get(&search).unwrap();
         show_info(element);
     }
