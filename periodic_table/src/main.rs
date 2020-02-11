@@ -1,3 +1,4 @@
+#![windows_subsystem = "windows"]
 use std::{fs, process};
 use std::collections::HashMap;
 use std::error::Error;
@@ -6,7 +7,6 @@ use std::io;
 use element::Element;
 
 mod element;
-
 fn main() {
     let mut elements: Vec<Element> = Vec::new();
     build_list(&mut elements);
@@ -17,7 +17,7 @@ fn main() {
 }
 
 fn read_element_file() -> String {
-    let raw_data = fs::read_to_string("src/elements.csv")
+    let raw_data = fs::read_to_string("resources/elements.csv")
         .expect("Error reading file");
     raw_data
 }
@@ -70,8 +70,10 @@ fn show_prompts(elements: &HashMap<String, &Element>) {
             _ => ()
         }
 
-        let element: &Element = elements.get(&search).unwrap();
-        show_info(element);
+        if elements.get(&search) != None {
+            let element: &Element = elements.get(&search).unwrap();
+            show_info(element);
+        }
     }
 }
 
