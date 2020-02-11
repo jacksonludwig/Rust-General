@@ -81,7 +81,7 @@ fn show_info(element: &Element) {
     println!("Name: {}", element.name);
     println!("Symbol: {}", element.symbol);
     println!("Atomic Number: {}", element.atomic_num);
-    println!("Molar mass: {}g/mol", element.mass_per_mole);
+    println!("Molar mass: {} g/mol", element.mass_per_mole);
     println!("Number of Protons: {}", element.number_protons);
     println!("Number of Neutrons: {}", element.number_neutrons);
     println!("Number of Electrons: {}", element.number_electrons);
