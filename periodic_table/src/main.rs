@@ -1,5 +1,5 @@
 #![windows_subsystem = "windows"]
-use std::{fs, process};
+use std::{process};
 use std::collections::HashMap;
 use std::error::Error;
 use std::io;
@@ -17,9 +17,8 @@ fn main() {
 }
 
 fn read_element_file() -> String {
-    let raw_data = fs::read_to_string("resources/elements.csv")
-        .expect("Error reading file");
-    raw_data
+    let raw_data = include_str!("D:\\Rust-General\\periodic_table\\resources\\elements.csv");
+    raw_data.parse().unwrap()
 }
 
 fn turn_to_struct(list: &mut Vec<Element>) -> Result<(), Box<dyn Error>> {
