@@ -8,7 +8,7 @@ fn main() {
     build_list(&mut elements);
 
     for element in elements {
-        println!("{}, protons: {}", element.name, element.atomic_num);
+        println!("{}, protons: {}, electrons: {}", element.name, element.atomic_num, element.number_electrons);
     }
 }
 
