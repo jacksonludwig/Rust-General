@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../struct_with_traits">
+      <sourceFolder url="file://$MODULE_DIR$/../struct_with_traits/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../struct_with_traits/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../struct_with_traits/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../struct_with_traits/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../struct_with_traits/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

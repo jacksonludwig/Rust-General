@@ -17,7 +17,8 @@ fn main() {
         ..user1 // copies rest of fields from user1 over user 2
     };
 
-
+    struct Color(i32, i32, i32); // tuple struct
+    let black = Color(0, 0, 0);
 }
 
 struct User {
@@ -29,8 +30,8 @@ struct User {
 
 fn build_user(email: String, username: String) -> User {
     User {
-        email,
-        username,
+        email, // implicit assignment
+        username, // implicit assignment
         active: true,
         sign_in_count: 1,
     }
