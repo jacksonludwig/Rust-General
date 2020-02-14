@@ -8,6 +8,8 @@ use element::Element;
 
 mod element;
 fn main() {
+    set_icon();
+
     let mut elements: Vec<Element> = Vec::new();
     build_list(&mut elements);
 
@@ -93,6 +95,15 @@ fn show_info(element: &Element) {
     }
     if element.number_valence != None {
         println!("Number of Valence: {}", element.number_valence.unwrap());
+    }
+}
+
+
+fn set_icon() {
+    if cfg!(target_os = "windows") {
+        let mut res = winres::WindowsResource::new();
+        res.set_icon("test.ico");
+        res.compile().unwrap();
     }
 }
 
